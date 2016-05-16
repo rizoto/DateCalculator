@@ -12,6 +12,7 @@
 		703B6E631CE9FB3900BC7886 /* DateCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B6E621CE9FB3900BC7886 /* DateCalculatorTest.swift */; };
 		703B6E681CE9FB4300BC7886 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B6E501CE9F28C00BC7886 /* Date.swift */; };
 		703B6E731CEA00F700BC7886 /* DateInitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B6E721CEA00F700BC7886 /* DateInitTest.swift */; };
+		703B6E771CEA11A200BC7886 /* DateBetweenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B6E761CEA11A200BC7886 /* DateBetweenTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		703B6E621CE9FB3900BC7886 /* DateCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalculatorTest.swift; sourceTree = "<group>"; };
 		703B6E641CE9FB3900BC7886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703B6E721CEA00F700BC7886 /* DateInitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateInitTest.swift; sourceTree = "<group>"; };
+		703B6E761CEA11A200BC7886 /* DateBetweenTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateBetweenTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				703B6E621CE9FB3900BC7886 /* DateCalculatorTest.swift */,
+				703B6E761CEA11A200BC7886 /* DateBetweenTest.swift */,
 				703B6E721CEA00F700BC7886 /* DateInitTest.swift */,
 				703B6E641CE9FB3900BC7886 /* Info.plist */,
 			);
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703B6E771CEA11A200BC7886 /* DateBetweenTest.swift in Sources */,
 				703B6E631CE9FB3900BC7886 /* DateCalculatorTest.swift in Sources */,
 				703B6E731CEA00F700BC7886 /* DateInitTest.swift in Sources */,
 				703B6E681CE9FB4300BC7886 /* Date.swift in Sources */,

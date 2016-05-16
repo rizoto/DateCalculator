@@ -18,6 +18,14 @@ else
         
         let first =  try Date(dateString: Process.arguments[1])
         let second =  try Date(dateString: Process.arguments[2])
+        
+        if first < second {
+            print("\(Process.arguments[1]) - \(Process.arguments[2]): \(second.daysBetween(first)) days")
+        } else if first > second {
+            print("\(Process.arguments[1]) - \(Process.arguments[2]): \(first.daysBetween(second)) days")
+        } else {
+            print("\(Process.arguments[1]) - \(Process.arguments[2]): \(0) days")
+        }
     
     } catch DateValidationError.OutOfRange {
         print("Out of Range \nusage: DateCalculator 2001-01-01 2002-02-02")
