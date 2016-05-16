@@ -19,4 +19,14 @@ class DateCalculatorTest: XCTestCase {
         XCTAssert(!Date.leapYear(2500))
     }
     
+    func testGreater() {
+        do {
+            let first = try Date(year: 2000, month: 2, day: 2)
+            let second = try Date(year: 2000, month: 2, day: 1)
+            XCTAssert(first > second)
+        } catch {
+            XCTFail()
+        }
+    }
+    
 }

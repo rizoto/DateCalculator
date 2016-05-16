@@ -20,9 +20,9 @@ else
         let second =  try Date(dateString: Process.arguments[2])
         
         if first < second {
-            print("\(Process.arguments[1]) - \(Process.arguments[2]): \(second.daysBetween(first)) days")
-        } else if first > second {
             print("\(Process.arguments[1]) - \(Process.arguments[2]): \(first.daysBetween(second)) days")
+        } else if first > second {
+            print("\(Process.arguments[1]) - \(Process.arguments[2]): \(second.daysBetween(first)) days")
         } else {
             print("\(Process.arguments[1]) - \(Process.arguments[2]): \(0) days")
         }
