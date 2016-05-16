@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		703B6E3E1CE9EF7100BC7886 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B6E3D1CE9EF7100BC7886 /* main.swift */; };
+		703B6E511CE9F28C00BC7886 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B6E501CE9F28C00BC7886 /* Date.swift */; };
+		703B6E631CE9FB3900BC7886 /* DateCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B6E621CE9FB3900BC7886 /* DateCalculatorTest.swift */; };
+		703B6E681CE9FB4300BC7886 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B6E501CE9F28C00BC7886 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,22 @@
 /* Begin PBXFileReference section */
 		703B6E3A1CE9EF7100BC7886 /* DateCalculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DateCalculator; sourceTree = BUILT_PRODUCTS_DIR; };
 		703B6E3D1CE9EF7100BC7886 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		703B6E501CE9F28C00BC7886 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		703B6E521CE9F2A800BC7886 /* Read.me */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Read.me; sourceTree = "<group>"; };
+		703B6E601CE9FB3900BC7886 /* DateCalculatorTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateCalculatorTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		703B6E621CE9FB3900BC7886 /* DateCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalculatorTest.swift; sourceTree = "<group>"; };
+		703B6E641CE9FB3900BC7886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		703B6E371CE9EF7100BC7886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		703B6E5D1CE9FB3900BC7886 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				703B6E3C1CE9EF7100BC7886 /* DateCalculator */,
+				703B6E611CE9FB3900BC7886 /* DateCalculatorTest */,
 				703B6E3B1CE9EF7100BC7886 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				703B6E3A1CE9EF7100BC7886 /* DateCalculator */,
+				703B6E601CE9FB3900BC7886 /* DateCalculatorTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +75,19 @@
 			isa = PBXGroup;
 			children = (
 				703B6E3D1CE9EF7100BC7886 /* main.swift */,
+				703B6E501CE9F28C00BC7886 /* Date.swift */,
+				703B6E521CE9F2A800BC7886 /* Read.me */,
 			);
 			path = DateCalculator;
+			sourceTree = "<group>";
+		};
+		703B6E611CE9FB3900BC7886 /* DateCalculatorTest */ = {
+			isa = PBXGroup;
+			children = (
+				703B6E621CE9FB3900BC7886 /* DateCalculatorTest.swift */,
+				703B6E641CE9FB3900BC7886 /* Info.plist */,
+			);
+			path = DateCalculatorTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +110,23 @@
 			productReference = 703B6E3A1CE9EF7100BC7886 /* DateCalculator */;
 			productType = "com.apple.product-type.tool";
 		};
+		703B6E5F1CE9FB3900BC7886 /* DateCalculatorTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 703B6E651CE9FB3900BC7886 /* Build configuration list for PBXNativeTarget "DateCalculatorTest" */;
+			buildPhases = (
+				703B6E5C1CE9FB3900BC7886 /* Sources */,
+				703B6E5D1CE9FB3900BC7886 /* Frameworks */,
+				703B6E5E1CE9FB3900BC7886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateCalculatorTest;
+			productName = DateCalculatorTest;
+			productReference = 703B6E601CE9FB3900BC7886 /* DateCalculatorTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +138,9 @@
 				ORGANIZATIONNAME = "Lubor Kolacny";
 				TargetAttributes = {
 					703B6E391CE9EF7100BC7886 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					703B6E5F1CE9FB3900BC7886 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -110,9 +158,20 @@
 			projectRoot = "";
 			targets = (
 				703B6E391CE9EF7100BC7886 /* DateCalculator */,
+				703B6E5F1CE9FB3900BC7886 /* DateCalculatorTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		703B6E5E1CE9FB3900BC7886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		703B6E361CE9EF7100BC7886 /* Sources */ = {
@@ -120,6 +179,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				703B6E3E1CE9EF7100BC7886 /* main.swift in Sources */,
+				703B6E511CE9F28C00BC7886 /* Date.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		703B6E5C1CE9FB3900BC7886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703B6E631CE9FB3900BC7886 /* DateCalculatorTest.swift in Sources */,
+				703B6E681CE9FB4300BC7886 /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +289,28 @@
 			};
 			name = Release;
 		};
+		703B6E661CE9FB3900BC7886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DateCalculatorTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.lk.DateCalculatorTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		703B6E671CE9FB3900BC7886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DateCalculatorTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.lk.DateCalculatorTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -237,6 +328,14 @@
 			buildConfigurations = (
 				703B6E421CE9EF7100BC7886 /* Debug */,
 				703B6E431CE9EF7100BC7886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		703B6E651CE9FB3900BC7886 /* Build configuration list for PBXNativeTarget "DateCalculatorTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				703B6E661CE9FB3900BC7886 /* Debug */,
+				703B6E671CE9FB3900BC7886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

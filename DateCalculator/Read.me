@@ -1,0 +1,18 @@
+### calculator between two dates ###
+
+startDate,endDate - (validation startDate < endDate)
+
+- leap year correction (if 29/2 is between dates 0..n times)
+
+scenarios:
+    same year
+        2000-01-01 2000-03-01
+    different years
+        2000-01-01 2001-03-01
+        1999-01-01 2001-12-31
+
+
+how to calculate -> time line
+translate date to the day of the year:
+01-01 = 1
+01-03 = 3
