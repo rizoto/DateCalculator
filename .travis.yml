@@ -1,0 +1,8 @@
+language: objective-c
+
+script: 
+- xcodebuild test -project DateCalculator.xcodeproj -scheme DateCalculator -destination 'platform=OS X,arch=x86_64'
+
+notifications:
+  email:
+    lkolacny@me.com
