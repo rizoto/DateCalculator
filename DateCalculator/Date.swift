@@ -27,9 +27,12 @@ struct Date {
     
     let year, month, day : Int
     
+    init(dateString: String) throws {
+        let components = dateString.componentsSeparatedByString("-")
+        try self.init(year: Int(components[0]) ?? 0, month: Int(components[1]) ?? 0, day: Int(components[2]) ?? 0)
+    }
     
-    init(year : Int, month : Int, day : Int) throws
-    {
+    init(year : Int, month : Int, day : Int) throws {
         
         self.year = year
         self.month = month
